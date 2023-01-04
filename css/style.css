@@ -1,0 +1,1608 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+.container{
+
+    margin: auto;
+    
+}
+
+h1,h2,h3,h4,h5,h6,p, a,span{
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: #1e1345;
+    background: url(../img/body_all.jpg) no-repeat;
+    background-size: cover; 
+    overflow-x: hidden;    
+}
+
+ /* ==========================================
+             comon css part end
+ ============================================== */
+
+
+
+::-webkit-scrollbar{
+
+    width: 0;
+}
+
+#scrillpath{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100px;
+    background: linear-gradient(to top, #29d706, #c312bd);
+
+    animation: animate 5s linear infinite;
+
+}
+
+@keyframes animate
+{
+
+    0%,100%
+    {
+        filter:hue-rotate(0deg);
+    }
+
+    0%
+    {
+        filter:hue-rotate(360deg);
+    }
+
+}
+
+
+#progressbar::before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #29d706, #c312bd);
+    filter:blur(10px)
+}
+
+#progressbar::after{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #29d706, #c312bd);
+    filter:blur(30px)
+}
+
+
+
+
+
+ /* ==========================================
+               nav part start
+ ============================================== */
+
+
+ #my_nav{
+
+    margin-top:30px;
+
+ }
+
+#my_nav .logo img{
+
+    max-width: 160px;
+    max-height: 60px;
+ 
+}
+
+#my_nav ul:hover li{
+
+filter: blur(20px);
+transition: .4s;
+
+}
+
+#my_nav ul li:hover{
+
+    filter: blur(0px);
+    background: white;
+    border-radius: 10px;
+    
+}
+
+#my_nav ul li a{
+
+    color: #fff;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight:500;
+    font-size:16px;
+    margin: 0 10px 0 0;
+    letter-spacing: 1px;
+    transition: .4s;
+}
+#my_nav ul li a:hover{
+    color:#00C0FF;
+
+}
+
+#my_nav .line{
+
+    width: 1px;
+    height:18px;
+    background-color:#ABA5BE;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+#my_nav .icon i{
+
+    color: white;
+    margin: 0 12px 0 0;
+    transition: .4s;
+}
+
+#my_nav .icon i:hover{
+
+    color:#00C0FF;
+}
+
+
+  /* ==========================================
+               nav part end
+ ============================================== */
+  /* ==========================================
+               banner part start
+ ============================================== */
+
+
+ #banner .text{
+    margin-top: 110px;
+ }
+#banner .text h3{
+
+    font-size: 70px;
+    color: white;
+}
+
+#banner .text h3 span{
+    color: #00C0FF;
+}
+
+#banner .text p{
+
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+}
+
+
+#banner .text a{
+
+    width: 200px;
+    background-color: #00C0FF;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top:42px;
+}
+
+#banner .img{
+
+    width: 400px;
+    height:447px;
+    margin-top:40px;
+    overflow: hidden;
+} 
+
+#banner .img img{
+
+  width: 100%;
+} 
+
+   /* ==========================================
+               banner part end
+ ============================================== */
+   /* ==========================================
+               work setting part part end
+ ============================================== */
+
+ #setting{
+
+    margin-top: 100px;
+ }
+
+ #setting .item .path .svg{ 
+
+    width: 65px;
+    height: 65px;
+    color:#f1f1f1;
+    margin-top: 64px;
+    margin-left:55px;
+    
+ }
+
+ #setting .item{
+
+    width: 328;
+    height: 393px;
+    background-color: #3a2b71;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+   
+ }
+ #setting .item .text{
+
+     transform: translateZ(30px);
+
+ }
+
+ #setting .item .text h2{ 
+
+    font-size: 21px;
+    color:#f1f1f1;
+    font-weight:700;
+    margin-top: 40px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-left:55px;
+    letter-spacing:.2px;
+   
+ }
+
+ #setting .item .text p{ 
+
+    font-size: 16px;
+    color:#b0acc2;
+    margin-left:55px;
+    margin-top:25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-right: 70px;
+ }
+
+    /* ==========================================
+               woprk setting part part end
+ ============================================== */
+     /* ==========================================
+                about me part part start
+ ============================================== */
+
+ #about_me .text{
+
+    text-align: center;
+    margin-top: 165px;
+ }
+
+#about_me .text h3{
+
+    font-size: 21px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    color: #00C0FF;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+#about_me .text h2{
+
+font-size: 40px;
+color:white;
+font-family: 'Fira Sans Extra Condensed', sans-serif;
+margin-top: 15px;
+font-weight: 600;
+letter-spacing:2px;
+
+}
+#about_me .text h1{
+
+    font-size: 40px;
+    color:white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-top:10px;
+    font-weight: 700;
+    letter-spacing:2px;
+    
+}
+
+#about_me .img_part{
+
+    margin-top: 85px;
+}
+
+#about_me .img_part .first{
+
+    display: flex;
+    
+}
+
+#about_me .img_part .first .all_svg {
+
+    width: 91px;
+    height: 91px;
+    border-radius: 10px;
+    background-color: #00C0FF;
+    text-align: center;
+    line-height: 91px;
+    margin-top: 105px;
+}
+
+#about_me .img_part .first .all_svg .svg{
+
+    width: 45px;
+    height: 45px;
+}
+
+
+#about_me .img_part .first .img_1 {
+    
+
+    margin-left:35px;
+    width: 300px; 
+    height: 500px;
+    
+
+}
+
+#about_me .img_part .first.img_1 img{
+
+
+width: 100%;
+
+}
+
+
+#about_me .img_part .second .img_2 {
+    
+    width: 280px;
+    height: 320px;
+    border-radius:10px; 
+    float: left;
+    transform: translateY(-64%);
+
+}
+  
+#about_me .img_part .second .img_2 img{
+    width: 100%;
+    border-radius:10px; 
+    
+}
+
+#about_me .img_part .second .suscess{
+
+    width: 8px;
+    height:50px;
+    background-color:#00C0FF;
+    display: inline-block;
+    margin-left:40px;
+    float: left;
+    margin-top: 25px;
+
+}
+
+#about_me .img_part .second .suscess h2{
+
+    font-size: 45px;
+    margin-left:20px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 700;
+    display: flex;
+    transform: translateY(-28%);
+ 
+    
+}
+
+#about_me .img_part .second .suscess h2 span{
+
+    margin-left: 12px;
+    font-size: 16px;
+    margin-top: 6px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-align: left;
+}
+
+#about_me .information{
+
+    margin-top: 115px;
+    margin-left: 45px;
+}
+#about_me .information h2{
+
+font-weight: 600;
+font-family:sans-serif;
+color: #fff;
+text-align: left;
+
+}
+
+#about_me .information p{
+
+    font-weight: 400;
+    line-height: 34px;
+    margin-top: 20px;
+    color: #b0acc2;
+    text-align: left;
+    font-size: 16px;
+    
+ }
+ #about_me .information .address{
+
+    display: flex;
+ }
+ #about_me .information .address .name{
+
+    width: 230px;
+    height: 250px;
+    border: 1px solid #00C0FF;
+    border-radius: 11px 0px 0px 11px;
+    margin-top: 35px;
+   
+ }
+
+
+ #about_me .information .address .name h4{
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 35px;
+    margin-top: 25px;
+
+ }
+ #about_me .information .address .name span{
+
+
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 10px;
+
+ }
+
+ #about_me .information .address .location{
+
+    width: 230px;
+    height: 250px;
+    border: 1px solid #00C0FF;
+    border-radius: 1px 11px 11px 1px;
+    margin-top: 35px;
+   
+ }
+
+
+ #about_me .information .address .location h4{
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 35px;
+    margin-top: 25px;
+
+ }
+ #about_me .information .address .location span{
+
+
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 10px;
+
+ }
+
+ #about_me .information .button a{
+
+    
+    width: 200px;
+    background-color: #00C0FF;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 42px;
+ }
+
+
+ /* ======================================
+               about me part part end
+ ============================================ */
+  /* ======================================
+               counter part part end
+ ============================================ */
+
+
+ #counter .first{
+
+    width: 240px;
+    height: 160px;
+    background-color: #432d92;
+    border-radius: 11px;
+     
+ }
+
+
+ #counter .first h1{
+
+    color: #00C0FF;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 160px;
+    float: left;
+    margin-left: 44px;
+    
+ }
+
+
+ #counter .first h4 {
+
+    font-size: 18px;
+    color: #fff;
+    font-weight:500;
+    float: left;
+    width: 50px;
+    text-align: center;
+    margin-top: 63px;
+    margin-left: 17px;
+
+ }
+
+ #counter .second{
+
+    width: 240px;
+    height: 160px;
+    background-color: #432d92;
+    border-radius: 11px;
+     
+ }
+
+
+
+ #counter .second h1{
+
+    color: #00C0FF;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 160px;
+    float: left;
+    margin-left: 44px;
+    
+ }
+
+ #counter .second h2{
+
+    color: #00C0FF;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 160px;
+    float: left;
+
+
+ }
+
+ #counter .second h4 {
+
+    font-size: 18px;
+    color: #fff;
+    font-weight:500;
+    float: left;
+    width: 50px;
+    text-align: center;
+    margin-top: 63px;
+    margin-left: 17px;
+
+ }
+
+  /* ======================================
+               counter part part end
+ ============================================ */
+
+  /* ======================================
+               skile part part start
+ ============================================ */
+
+ #skile .title{
+
+    text-align: center;
+    margin-top: 170px;
+    margin-bottom: 50px;
+
+ }
+
+
+ #skile .title h3{
+
+    color: #00C0FF;
+    font-size: 21px;
+    font-weight: 600;
+    
+ }
+
+ #skile .title h1{
+
+    color:#fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 15px;
+    
+ }
+
+ #skile .title h2{
+
+    color:#fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top:8px;
+    
+ }
+
+
+ #skile .design_all {
+    
+    margin: 0 35px;
+ }
+
+ #skile .design_all .design{
+
+    margin-top: 45px;
+ }
+
+ #skile .design_all .design h2{
+    
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    margin-bottom: 12px;
+
+ }
+
+
+ #skile .design_all .design .barfiller{
+
+   height: 8px;
+   height: 9px;
+   border-radius: 10px;
+   border: none;
+  
+   
+ }
+
+ #skile .design_all .design  .fill{
+  
+    border-radius: 20px;
+    background-color: #00C0FF !important;
+   
+ }
+
+ #skile .design_all .design .barfiller .tip{
+
+ background-color: transparent;
+ margin-top: -40px;
+ font-size: 18px;
+ color: #fff;
+color: #00C0FF ;
+
+ }
+
+ #skile .design_all .design .barfiller .tip:after{
+
+    border: none;
+ } 
+
+   /* ======================================
+               skile part part end
+ ============================================ */
+   /* ======================================
+               client services part part start
+ ============================================ */
+
+#services .title{
+
+    margin-top: 160px;
+    text-align: center;
+    margin-bottom: 53px;
+}
+
+
+#services .title h3{
+
+    color: #00C0FF;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+#services .title h2{
+
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+
+#services .maine{
+
+    width: 329px;
+    height: 401px;
+    background-color: #3a2b71;
+    border-radius: 10px;
+    
+}
+
+#services .maine .item{
+    margin-top: 27px;
+}
+
+#services .maine .item .all_svg .svg{
+    width: 227px;
+    height: 65px;
+    color: cyan;
+    float: left;
+    z-index: 12;
+    position: absolute;
+    margin-top: 65px;
+    position: absolute;
+    transition: .2s;
+}
+#services .maine:hover .item .all_svg .svg{
+    width: 286px;
+    height: 38px;
+    margin-top: 110px;
+
+}
+
+#services .maine .item .syrcel {
+
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #00C0FF;
+    margin-left: 105px;
+    float: right;
+    margin-top: 93px;
+    margin-right: 152px;
+    position: relative;
+    margin-bottom: 45px;
+    
+}
+
+
+#services .maine .item h2{
+
+    color: white;
+    font-weight: 800px;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: sans-serif;
+
+}
+
+#services .maine .item p{
+    
+
+    font-weight: 400;
+    line-height: 34px;
+    margin-top: 20px;
+    color: #b0acc2;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 38px;
+    text-align: center;
+    margin-right: 35px;
+}
+
+
+    
+/* ======================================
+     client services part part end
+ ============================================ */
+ /* ======================================
+ education experiance services part part end
+ ============================================ */
+
+#education .title{
+
+    margin-top: 140px;
+    text-align:center;
+}
+
+
+#education .title h2{
+
+    color: #00C0FF;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+#education .title h3{
+
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+
+#education .title h4{
+
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+
+#education .experiance  h1{
+
+    color: #fff;
+    margin-top: 70px;
+    font-weight: 700;
+    margin-bottom: 62px;
+
+}
+
+
+#education .item_2{
+
+    padding-left: 20px;
+    
+}
+
+#education .item .content{
+
+    display: flex;
+}
+#education .item .box{
+
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    background-color: #00C0FF;
+    z-index: 1;
+}
+
+#education .item .box .svg_all .svg{
+
+    width: 70px;
+    height: 35px;
+    margin-top: 18px;
+
+}
+#education .item .text{
+    margin-left: 35px;
+}
+
+#education .item .text h2{
+
+    color: #fff;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+#education .item .text h2 span{
+
+    color: #00C0FF;
+    font-size: 16px;
+    margin-left: 10px;
+    font-family: sans-serif;
+
+}
+
+#education .item .text h3{
+
+    color: #fff;
+    margin-top: 15px;
+    font-size: 20px;
+}
+    
+#education .item .text p{
+
+    color: rgb(202, 202, 202);
+    margin-top: 34px;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+    
+
+#education .item .line{
+
+    width: 1px;
+    height: 133px;
+    background-color: rgb(2, 236, 244);
+    margin-top: -96px;
+    margin-left: 35px;
+    z-index: -1;
+
+}
+
+ /* ======================================
+    education experiance services part part end
+ ============================================ */
+ /* ======================================
+     protfolio mixtup services part part start
+ ============================================ */
+
+
+ #portfolio .title{
+
+    text-align: center;
+    margin-top: 90px;
+
+
+ }
+
+ #portfolio .title h3{
+
+    color: #00C0FF;
+    font-size: 21px;
+    font-weight: 600;
+ }
+
+ #portfolio .title h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 8px;
+    
+}
+
+#portfolio .mixtup_button {
+
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+
+}
+
+
+#portfolio .mixtup_button a{
+
+    color: white;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+#portfolio .maine .item{
+    position: relative;
+    width: 335px;
+    height: 335px;
+    margin-top: 8px;
+}
+#portfolio .maine .item img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+#portfolio .maine .item .overlay{
+    position: absolute;
+    width: 299px;
+    height: 100px;
+    bottom:0px;
+    margin-left: 18px;
+    border-radius: 10px;
+    background-color: #1e1345;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: .4s;
+}
+
+#portfolio .maine .item:hover .overlay{
+
+    transform: scale(1);
+    bottom: 32px;
+}
+
+#portfolio .maine .item .overlay h2{
+
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+
+#portfolio .maine .item .overlay p{
+
+    color: white;
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+  /* ======================================
+     protfolio mixtup services part part end
+ ============================================ */
+   /* ======================================
+       testomonial part part start
+ ============================================ */
+
+
+#testomonial .title{
+
+    text-align: center;
+    margin-top: 170px;
+    margin-bottom: 50px;
+}
+
+
+#testomonial .title h3{
+
+    text-align: center;
+    color: #00C0FF;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+#testomonial .title h2{
+
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+
+#testomonial .all_slider .item{
+
+    text-align: center;
+}
+
+#testomonial .all_slider .item .all_svg .svg{
+
+    width: 80px;
+    height: 80px;
+  
+}
+
+#testomonial .all_slider .item p{
+
+    color: white;
+    margin-left: 36px;
+    margin-right: 36px;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 40px;
+    font-weight: 500;
+    margin-top: 56px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+#testomonial .all_slider .item .all_img_text{
+
+
+    margin-left: 44%;
+    margin-top: 65px;
+    display: flex;
+  
+}
+
+#testomonial .all_slider .item .img{
+
+    width: 63px;
+    height: 63px;
+    background-color: #cfcadf;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    
+
+}
+
+#testomonial .all_slider .item .img img{
+
+    width: 100%;
+}
+
+
+
+#testomonial .all_slider .item .text h3{
+    color: white;
+    margin-left: 25px;
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+#testomonial .all_slider .text h4{
+    color: rgb(184, 170, 170);
+    margin-left: -42px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+#testomonial .all_slider .slick-dots li{
+
+    display: inline-block;
+    text-align: center;
+    padding: 0 7px;
+
+}
+
+#testomonial .all_slider .slick-dots li button{
+
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #00C0FF;
+    border: none;
+    border: 1px solid black;
+}
+
+#testomonial .all_slider .slick-dots{
+
+    text-align: center;
+    margin-top:50px;
+}
+
+
+#testomonial .all_slider .slick-dots .slick-active button{
+
+
+   border: 3px solid rgb(255, 255, 255);
+   
+}
+
+
+/* ======================================
+          testomonial  part part end
+ ========================================== */
+ /* ======================================
+        slider othersl  part part start
+ ============================================ */
+
+
+#slider .item{
+
+
+    height: 235px;
+    background-color: #432d92;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+
+#slider .item .slider {
+
+    margin-top:57px;
+
+}
+
+ /* ======================================
+         slider others part part end
+ ========================================== */
+  /* ======================================
+         latest blog  others part part end
+ ========================================== */
+
+
+
+#blog .title{
+
+    text-align: center;
+    margin-top: 168px;
+    margin-bottom: 80px;
+
+}
+
+#blog .title h3{
+
+    color: #00C0FF;
+    font-size: 21px;
+    font-weight: 600;
+    
+}
+#blog .title h2{ 
+
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 8px;
+    
+}
+
+#blog .item .img{
+
+    width: 327px;
+    height: 227px;
+    border-radius: 10px;
+
+}
+
+#blog .item .img img{
+
+width: 100%;
+border-radius: 10px;
+border-radius: 10px 10px 0px 0px;
+
+}
+
+#blog .item .text{
+
+    width: 327px;
+    height: 155px;
+    background-color: #432d92;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#blog .item .text  h3{
+
+    color:rgb(206, 196, 196);
+    font-size: 17px;
+    padding-top: 35px;
+    margin-left: 35px;
+}
+
+#blog .item .text  h3 span{
+
+    color: #00C0FF;
+    font-size: 17px;
+    padding-top: 35px;
+   
+}
+
+#blog .item .text  h4{
+
+    color: white;
+    font-size: 21px;
+    margin-left: 35px;
+    margin-top: 13px;
+    font-weight: 700;
+}
+#blog .item .text  h4 span{
+
+    color: white;
+    font-size: 21px;
+    margin-top: 13px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+  /* ======================================
+         latest blog others part part end
+ ========================================== */
+   /* ======================================
+         contact part part start
+ ========================================== */
+
+
+#contact .title{
+
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 90px;
+}
+
+#contact .title h3{
+
+    color: #00C0FF;
+    font-size: 21px;
+    font-weight: 600;
+}
+#contact .title h2{ 
+
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+#contact .item{
+
+    display: flex;
+    margin-bottom: 15px;
+    
+
+}
+
+#contact .item .icon{
+
+    width:88px;
+    height: 88px;
+    border-radius: 50%;
+    background-color: #00C0FF;
+}
+
+#contact .item .icon{
+
+    text-align: center;
+    line-height: 88px;
+    color: white;
+    font-size: 25px;
+}
+
+#contact .item .text{
+
+    margin-left: 25px;
+    margin-top: 7px;
+}
+
+#contact .item .text h3{
+
+    color: white;
+    font-size: 33px;
+    font-weight: 700;
+
+
+}
+
+#contact .item .text p{
+
+    color: rgb(181, 171, 171);
+    font-size: 15px;
+    
+    
+}
+    
+
+
+#contact .text form input{
+
+    background-color: transparent;
+    width: 240px;
+    height: 59px;
+    border-radius: 10px;
+    box-shadow: none;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    padding: 0px 45px;
+    margin-left: 12px;
+    color: rgb(172, 161, 161);
+}
+
+#contact .text form textarea{
+
+    background-color: transparent;
+    border-radius: 10px;
+    margin-left: 12px;
+    color: rgb(172, 161, 161);
+   padding: 30px 0;
+}
+
+
+#contact .text a{
+    width: 200px;
+    background-color: #00C0FF;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+   /* ======================================
+         contact part part end
+ ========================================== */
+    /* ======================================
+         newslettsr part part start
+ ========================================== */
+
+
+ #newsletter .all_item{
+
+    width: 1070px;
+    height: 290px;
+    background-color: #432d92;
+    border-radius: 10px;
+    margin-top: 190px;
+
+ }
+
+ #newsletter .all_item .left{
+    margin-top: 90px;
+   
+ }
+
+ #newsletter .all_item .left h3{
+
+    margin-left: 92px;
+    color: #00C0FF;
+    font-size: 21px;
+    font-weight: 600;
+ }
+
+ 
+ #newsletter .all_item .left h1{
+
+ text-align: center;
+ color: #fff;
+ font-size: 40px;
+ font-weight: 700;
+ margin-top: 6px;
+ 
+ }
+
+ #newsletter .all_item .left p{
+
+
+    color: rgb(156, 148, 148);
+    font-weight: 400;
+    margin-left: 92px;
+    margin-top: 8px;
+    
+}
+
+#newsletter .all_item .right{
+
+    margin-top: 108px;
+}
+
+#newsletter .all_item .right input{
+
+width: 265px;
+height: 73px;
+border-radius: 10px 0px 0px 10px;
+border: none;
+padding-left: 20px;
+float: left;
+
+}
+
+#newsletter .all_item .right .button a{
+
+    width: 152px;
+    height: 73px;
+    background-color: #00C0FF;
+    text-align: center;
+    line-height: 73px;
+    float: left;
+    border-radius: 0px 10px 10px 0px;
+    color:white;
+    font-weight: 700;
+}
+
+    /* ======================================
+         newsletter part part end
+ ========================================== */
+     /* ======================================
+         footer part part start
+ ========================================== */
+
+
+ #footer{
+    margin-top: 90px;
+    margin-bottom: 90px;
+ }
+#footer h3{
+
+    color: rgb(182, 172, 172);
+    text-align: center;
+    font-size: 18px;
+}
+
+#footer h3 span{
+
+    color:white;
+    text-align: center;
+    font-size: 20px;
+}
+
+#footer h3 span i{
+    color: rgb(182, 172, 172);
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /* ======================================
+         footer part part end
+ ========================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

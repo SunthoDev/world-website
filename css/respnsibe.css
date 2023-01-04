@@ -1,0 +1,412 @@
+/* 
+@media (min-width: 1400px){}
+@media (min-width: 1200px) and (max-width: 1399.98px){}
+@media (min-width: 992px) and (max-width: 1199.98px){}
+@media (min-width: 768px) and (max-width: 991.98px){}
+@media (min-width: 576px) and (max-width: 767.98px){}
+@media (max-width: 575.98px){} */
+
+
+
+
+
+
+
+@media (max-width: 575.98px){
+
+    #banner .text {
+        margin-top: 40px;
+        text-align: center;
+    }
+    #banner .img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    #setting {
+        margin-top: 0px;
+    }
+    #setting .item {
+        margin-bottom: 30px;
+    }
+    #about_me .text {
+        margin-top: 40px;
+    }
+    #about_me .img_part .first .all_svg {
+        display: none;
+    }
+    #about_me .img_part .first .img_1 {
+        margin-left: 0;
+        width: 100%;
+    }
+    #about_me .img_part .second .suscess {
+        display: none;
+    }
+    #about_me .information {
+        margin-top: 0;
+        margin-left: 0;
+        padding: 10px;
+    }
+    #about_me .information .button a {
+        margin-bottom: 20px;
+    }
+    #counter .first {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #counter .second {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #skile .title {
+        margin-top: 60px;
+    }
+    #skile .title {
+        margin-top: 60px;
+    }
+    #services .maine {
+        width: 100%;
+    }
+    #services .maine .item .syrcel {
+        margin-right: 120px;
+    }
+    #about_me .information .address .location {
+        width: 100%;
+    }
+    #about_me .information .address .name {
+        width: 100%;
+    }
+    #education .title {
+        margin-top: 80px;
+    }
+    #portfolio .maine .item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    #testomonial .title {
+        margin-top: 60px;
+    }
+    #slider .item {
+        margin-top: 80px;
+    }
+    #blog .title {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    #blog .item .img {
+        width: 100%;
+        height: auto;
+    }
+    #blog .item .text {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contact .title {
+        margin-top: 60px;
+    }
+    #contact .text form textarea {
+        width: 100%;
+        text-align: center;
+    }
+    #contact .text form textarea {
+        margin-left: 0;
+    }
+    #newsletter .all_item {
+        width: 100%;
+        margin-top: 80px;
+    }
+    #newsletter .all_item .right input {
+        width: 100%;
+    }
+    #newsletter .all_item .right .button a {
+        width: 100%;
+    }
+    #footer {
+        margin-top: 183px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+   
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px){
+
+
+#banner .text {
+	text-align: center;
+}
+#banner .img {
+	width: 100%;
+	height: auto;
+}
+#setting .item {
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+#about_me .text {
+	margin-top: 80px;
+}
+#about_me .information {
+	margin-top: 0;
+}
+#counter .first {
+	width: 100%;
+	margin-bottom: 30px;
+}
+#counter .second {
+	width: 100%;
+	margin-bottom: 30px;
+}
+#skile .title {
+	margin-top: 80px;
+}
+#services .title {
+	margin-top: 70px;
+}
+#services .maine {
+	margin: 0 auto;
+}
+#portfolio .maine .item {
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+#blog .title {
+	margin-top: 100px;
+}
+#blog .item .img {
+	height: auto;
+	margin: 0 auto;
+}
+#blog .item .text {
+	margin: 0 auto;
+    margin-bottom: 30px;
+}
+#newsletter .all_item {
+	width: 100%;
+}
+#footer {
+	margin-top: 128px;
+	margin-bottom: 40px;
+}
+
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px){
+
+    #banner .text {
+        text-align: center;
+    }
+    #banner .img {
+        width: 100%;
+        height: auto;
+    }
+    #setting .item {
+        margin-bottom: 30px;
+    }
+    #about_me .text {
+        margin-top: 100px;
+    }
+    #about_me .information {
+        margin-top: 0;
+    }
+    #counter .first {
+        width: 100%;
+        margin: 30px 0;
+    }
+    #counter .second {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #skile .title {
+        margin-top: 80px;
+    }
+    #services .title {
+        margin-top: 100px;
+    }
+    #services .maine {
+        margin: 0 auto;
+    }
+    #portfolio .maine .item {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    #testomonial .title {
+        margin-top: 80px;
+        margin-bottom: 88px;
+    }
+    #testomonial .title {
+        margin-top: 80px;
+    }
+    #blog .item .img {
+        height: auto;
+        margin: 0 auto;
+    }
+    #blog .item .text {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    #contact .title {
+        margin-top: 50px;
+    }
+    #newsletter .all_item {
+        width: 100%;
+        margin-top: 68px;
+    }
+    #newsletter .all_item .left h3 {
+        text-align: center;
+        margin-left: 0;
+    }
+    #newsletter .all_item .left p {
+        margin-left: 0;
+        text-align: center;
+    }
+    #footer {
+        margin-top: 120px;
+        margin-bottom: 32px;
+    }
+
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+
+    #banner .text {
+        text-align: center;
+    }
+    #banner .img {
+        width: 100%;
+        height: auto;
+    }
+
+    #banner .img {
+        margin-top: 40px;
+    }
+    #counter .first {
+        width: 100%;
+    }
+    #counter .second {
+        width: 100%;
+    }
+    #services .maine {
+        width: 100%;
+    }
+    #portfolio .maine .item {
+        width: 100%;
+    }
+    #portfolio .maine .item .overlay {
+        width: 100%;
+        margin-left: 0;
+    }
+    #testomonial .title {
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+    #blog .item .img {
+        width:100%;
+        height: auto;
+    }
+    #blog .item .text {
+        width: 100%;
+    }
+    #contact .title {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+    #newsletter .all_item {
+        width: 100%;
+    }
+    #footer {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1399.98px){
+
+
+    #banner .text {
+        text-align: center;
+    }
+    #counter .first {
+        width: 100%;
+    }
+    #services .maine {
+        width: 100%;
+    }
+  
+    #portfolio .maine .item {
+        position: relative;
+        width: 100%;
+        height: 335px;
+        margin-top: 8px;
+        margin-bottom: 30px;
+    }
+    #testomonial .title {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    #blog .item .img {
+        width: 100%;
+        height: auto;
+    }
+    #blog .item .text {
+        width: 100%;
+    }
+    #footer {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
